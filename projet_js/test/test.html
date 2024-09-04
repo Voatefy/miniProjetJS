@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      a{
+         opacity: 0;
+         text-decoration: none;
+         animation: slide .1s ease forwards;
+         animation-delay: calc(.4s * var(--i));
+      }
+
+      @keyframes slide {
+         100%{
+            opacity: 1;
+            transform: translateX(10px);
+         }
+      }
+   </style>
+</head>
+<body>
+   <nav>
+      <a href="#" style="--i:1">Tefy</a>
+      <a href="#" style="--i:2">Mihary</a>
+      <a href="#" style="--i:3">christalin</a>
+      <a href="#" style="--i:4">Media</a>
+   </nav>
+</body>
+<script src="test.js"></script>
+</html>

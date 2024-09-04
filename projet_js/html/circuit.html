@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit</title>
+    <link rel="stylesheet" href="./../css/circuit.css">
+</head>
+<body id="bbooddyy">
+    <header>
+        <h1>INNOV.<span class="titre">ation</span></h1>
+        <a href="./../html/accueil.html">Accueil</a>
+    </header>
+    <div class="container">
+        <div class="tali">
+            <p class="sous-titre">Calcul des intesités passant par R1, R2 et R3 puis les tensions U<sub>AB</sub>, U<sub>BC</sub>, U<sub>CD</sub></p>
+            <img src="./../photos/circuit.png" alt="circuit">
+            <p id="sous-titre"><br>Entrer les valeurs des résitances R1, R2, R3 et R4 : </p><br>
+            <form>
+                <label for="e"><span class="lab">Entrer la valeur de</span> E &ThinSpace;&ThinSpace;&ThinSpace;:</label>
+                <input type="number" id="e">
+                <select name="unitee" id="unitee">
+                    <option value="1">V</option>
+                    <option value="0.001">mV</option>
+                    <option value="1000">kV</option>
+                </select><br><br>
+                <label for="r1"><span class="lab">Entrer la valeur de</span> R1 : </label>
+                <input type="number" id="r1">
+                <select name="unite1" id="unite1">
+                    <option value="1">Ω</option>
+                    <option value="1000">kΩ</option>
+                    <option value="1000000">MΩ</option>
+                </select><br><br>
+                <label for="r2"><span for="" class="lab">Entrer la valeur de</span> R2 : </label>
+                <input type="number" id="r2">
+                <select name="unite2" id="unite2">
+                    <option value="1">Ω</option>
+                    <option value="1000">kΩ</option>
+                    <option value="1000000">MΩ</option>
+                </select><br><br>
+                <label for="r3"><span class="lab">Entrer la valeur de</span> R3 : </label>
+                <input type="number" id="r3">
+                <select name="unite3" id="unite3">
+                    <option value="1">Ω</option>
+                    <option value="1000">kΩ</option>
+                    <option value="1000000">MΩ</option>
+                </select><br><br>
+                <label for="r4"><span class="lab">Entrer la valeur de</span> R4 : </label>
+                <input type="number" id="r4">
+                <select name="unite4" id="unite4">
+                    <option value="1">Ω</option>
+                    <option value="1000">kΩ</option>
+                    <option value="1000000">MΩ</option>
+                </select><br><br>
+                <button onclick="calcul()">Calculer</button>
+            </form><br><br>
+            <p id="resultat"></p>
+        </div>
+    </div>
+    <script src="./../js/circuit.js"></script>
+</body>
+</html>

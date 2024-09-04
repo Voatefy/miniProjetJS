@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popin', sans-serif;
+}
+
+body{
+    color: #ededed;
+    background: #081b29;
+ }
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #051129;
+    padding: 20px 10%;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+header h1{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+    font-family: cursive;
+}
+
+
+header span{
+    color: cyan;
+}
+
+section{
+    padding: 20px;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 13%;
+}
+
+.container a{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s , transform 0,5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    opacity: 0;
+    animation: slideTop 1.5s ease forwards;
+    animation-delay: calc(0.7s*var(--i));
+}
+
+.container a:hover{
+    background-color: rgba(0, 255, 255, 0.138);
+}
+
+.container a h3{
+    font-size: 20px;
+    color: #0ef;
+
+}
+
+.container a p{
+    margin: 30px 10px;
+    color: #ededed;
+}
+
+
+footer{
+    margin-top: 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer span,i{
+    margin: 10px;
+}
+
+footer div span{
+    animation: slideLeft 1s ease forwards;
+    transform: translateX(-50px);
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+i{
+    font-size: 20px;
+}
+
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

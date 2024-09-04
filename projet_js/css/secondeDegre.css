@@ -1,0 +1,159 @@
+*{
+   color: white;
+}
+body{
+   background-color: #081b29;
+   font-family: 'popins',sans-serif;
+}
+header{
+   width: 100%;
+   position: fixed;
+   background-color: #051129;
+   left: 0;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   padding: 20px;
+}
+
+header h1,a{
+   margin: auto 30px;
+}
+
+header h1{
+   color: #ededed;
+   font-family: cursive;
+   opacity: 0;
+   transform: translateX(-40px);
+   animation: slideRight .7s ease forwards;
+   animation-delay: .5s;
+}
+
+header h1 span{
+   color: #0ef;
+}
+
+header a{
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1.5px;
+   background-color: cyan;
+   border-radius: 20px;
+   padding: 5px;
+   box-shadow: 0 0 10px cyan;
+   color: #081b29;
+}
+
+header a:hover{
+   box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 50px cyan, 0 0 70px cyan;
+}
+
+section{
+   width: 100%;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+}
+
+#contenair{
+   margin-top: 70px;
+   font-size: 18px;
+   align-content: center;
+   text-align: left;
+   margin-left: 60px;
+}
+#sous-titre{
+   color: cyan;
+   opacity: 0;
+   transform: translateY(30px);
+   animation: slideTop 2s ease forwards;
+   animation-delay: 1.7s;
+}
+
+.form div{
+   margin: 12px auto;
+   transform: translateX(300px);
+   transition: .3s;
+   opacity: 0;
+   animation: slideTop 2.5s ease forwards;
+   animation-delay: calc(.2s * var(--i));   
+}
+
+input{
+   text-align: center;
+   width: 55px;
+   border: solid 1px white;
+}
+input:hover{
+   background-color: rgba(0, 255, 255, 0.275);
+   scale: 1.1;
+   border: solid 1px rgba(0, 255, 136, 0.714);
+}
+
+select,input{
+   background-color: rgba(128, 128, 128, 0.479);
+   border-radius: 5px;
+}
+
+button{
+   background: cyan;
+   color: #051129;
+   font-weight: 900;
+   margin-top: 30px;
+   border: none;
+   padding: 5px 15px;
+   border-radius: 20px;
+   box-shadow: 0 0 10px cyan;
+}
+
+button:hover{
+   color: whhite;
+   border-color: red;
+   box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 50px cyan, 0 0 70px cyan;
+}
+button.bout{
+   visibility: hidden;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   height: 30px;
+   width: 400px;
+   background-color: transparent;
+}
+button.bout:hover{
+   border: none;
+   box-shadow: 0 0 10px cyan;
+}
+#resultat1,#resultat2{
+   margin: 5px;
+}
+
+
+.monter{
+   opacity: 0;
+   transform: translateY(30px);
+   animation: slideTop 2s ease forwards;
+   animation-delay: 1s;
+}
+
+@keyframes slideTop {
+   100%{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes slideRight {
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideLeft {
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
+}

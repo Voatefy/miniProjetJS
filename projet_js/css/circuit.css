@@ -1,0 +1,98 @@
+body{
+    background-color: #081b29;
+    font-family: 'popin', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #051129;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+header h1,a{
+    margin: auto 30px;
+}
+
+header h1{
+    font-family: cursive;
+    color: #ededed;
+}
+
+header h1 span{
+    color: #0ef;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: cyan;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 10px cyan;
+    color: #081b29;
+}
+
+header a:hover{
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 50px cyan, 0 0 70px cyan;
+}
+
+div.container{
+    position: absolute;
+    margin-top: 97px;
+    width: 97%;
+}
+.sous-titre{
+    color: cyan;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 2px 0 7px black;
+}
+img{
+    width: 500px;
+    height: 500px;
+    float: left ;
+    margin: 20px;
+}
+
+#sous-titre{
+    color: rgb(47, 238, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lab:hover{
+    text-decoration: underline;
+    color: rgb(25, 215, 158);
+    
+}
+
+input:hover{
+    background-color: rgba(157, 255, 127, 0.35);
+    scale: 1.1;
+}
+*{
+    color: white;
+}
+button,select,input{
+    background-color: rgba(128, 128, 128, 0.479);
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: green;
+    color: whhite;
+    border-color: red;
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.486);
+}
+input{
+    width: 100px;
+    border-color: rgb(255, 213, 47);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résolution de l'équation du second degré</title>
+    <link rel="stylesheet" href="./../css/secondeDegre.css">
+    </head>
+    <body>
+        <header>
+            <h1>PUB.<span class="titre">super</span></h1>
+            <a href="./../html/accueil.html" class="monter">Accueil</a>
+        </header>
+        <section>
+            <div id="contenair">
+                <p id="sous-titre">Résolution de l'équation du second degré ax<sup>2</sup>+bx+c=0</p><br><br>
+                <div class="form">
+                    <div style="--i:1"><label for="a">Entrer a : </label><input type="number" name="a" id="a"></div>
+                    <div style="--i:2"><label for="b">Entrer b : </label><input type="number" name="b" id="b"></div>
+                    <div style="--i:3"><label for="c">Entrer c : </label><input type="number" name="c" id="c"></div>
+                </div>
+                <button class="monter" onclick="resoudre()">Résoudre</button><br><br>
+                <p id="res"></p>
+                <button class="bout" id="butt1"><p id="resultat1"></p></button><br>
+                <button class="bout" id="butt2"><p id="resultat2"></p></button>
+            </div>
+        </section>
+        <script src="./../js/secondDegre.js"></script>
+    </body>
+</html>
